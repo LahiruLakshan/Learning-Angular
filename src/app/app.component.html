@@ -5,3 +5,27 @@
 <h2>{{obj.age}}</h2>
 <h2>{{arr[0]}}</h2>
 <app-login></app-login>
+
+<button (click)="myEvent('click event')">Click Me</button>
+<br>
+<br>
+<input type="text" #box1 (keyup.space)="myEvent(box1.value)"/>
+<br>
+<br>
+<input type="text" #box2  (blur)="myEvent(box2.value)"/>
+<br>
+<br>
+<input type="text" #box3 (keyup.enter)="myEvent(box3.value)" (blur)="myEvent(box3.value)"/>
+<h1
+  (mouseover)="myEvent('mouse over event')"
+  style="background-color: #bda100"
+>
+  Mouse Over Event
+</h1>
+
+<h1
+  (mouseleave)="myEvent('mouse leave event')"
+  style="background-color: #970000"
+>
+  Mouse Leave Event
+</h1>

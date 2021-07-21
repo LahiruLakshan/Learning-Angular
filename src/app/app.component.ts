@@ -16,5 +16,9 @@ export class AppComponent {
     name:"lahiru",
     age:20
   }
-  arr=["lahiru","lakshan",20]
+  arr=["lahiru","lakshan",20];
+
+  myEvent(evt: any){
+    console.log(evt);
+  }
 }
