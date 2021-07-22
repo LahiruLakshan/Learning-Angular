@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'Learning Angular';
   name = "lahiru";
   lastName = "lakshan"
+
+  value = ""
   getName(){
     return this.lastName;
   }
@@ -20,5 +22,10 @@ export class AppComponent {
 
   myEvent(evt: any){
     console.log(evt);
+  }
+
+  getValue(data:any) {
+    console.log(data.value);
+    this.value=data.value;
   }
 }
