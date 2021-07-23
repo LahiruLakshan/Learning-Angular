@@ -8,9 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Learning Angular';
   name = "lahiru";
-  lastName = "lakshan"
+  lastName = "lakshan";
+  count:number=0;
+  value = "";
 
-  value = ""
   getName(){
     return this.lastName;
   }
@@ -27,5 +28,8 @@ export class AppComponent {
   getValue(data:any) {
     console.log(data.value);
     this.value=data.value;
+  }
+  getEvent(type:string){
+    type == "add"? this.count++:this.count--;
   }
 }

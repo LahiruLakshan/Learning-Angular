@@ -32,3 +32,7 @@
 
 <input type="text" (keyup)="getValue($event.target)">
 <h1>{{value}}</h1>
+
+<button (click)="getEvent('minus')">--</button>
+<p>Count : {{count}}</p>
+<button (click)="getEvent('add')">++</button>
