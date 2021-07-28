@@ -36,3 +36,8 @@
 <button (click)="getEvent('minus')">--</button>
 <p>Count : {{count}}</p>
 <button (click)="getEvent('add')">++</button>
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'" style="color: #970000">Red Color</h1>
+  <h1 *ngSwitchCase="'blue'" style="color: #0033ff">Blue Color</h1>
+  <h1 *ngSwitchDefault>Unknown Color</h1>
+</div>

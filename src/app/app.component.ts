@@ -11,6 +11,7 @@ export class AppComponent {
   lastName = "lakshan";
   count:number=0;
   value = "";
+  color : string = "blue";
 
   getName(){
     return this.lastName;
