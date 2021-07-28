@@ -17,6 +17,11 @@ export class AppComponent {
     {name:"Lahiru",year:1999, school:"Sri Dharmaloka College"},
     {name:"Kalana",year:2000, school:"DS Collage"}
   ];
+  usersList=[
+    {name:"Lahiru",phone:1112434311,email:"lahiru@gmail.com", account:['facebook', 'gmail', 'linkedIn']},
+    {name:"Peter",phone:132322334,email:"peter@gmail.com", account:['linkedIn', 'yahoo', 'youtube']},
+    {name:"Kasun",phone:1112344211,email:"kasun@gmail.com", account:['twitter', 'instagram', 'youtube']}
+  ]
   getName(){
     return this.lastName;
   }
@@ -28,7 +33,6 @@ export class AppComponent {
 
   myEvent(evt: any){
     console.log(evt);
-    console.log(this.userDetails)
   }
 
   getValue(data:any) {
