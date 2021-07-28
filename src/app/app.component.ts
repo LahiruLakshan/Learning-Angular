@@ -12,7 +12,11 @@ export class AppComponent {
   count:number=0;
   value = "";
   color : string = "blue";
-
+  users: string[]=["Lahiru", "Lakshan", "Tissera"];
+  userDetails:any = [
+    {name:"Lahiru",year:1999, school:"Sri Dharmaloka College"},
+    {name:"Kalana",year:2000, school:"DS Collage"}
+  ];
   getName(){
     return this.lastName;
   }
@@ -24,6 +28,7 @@ export class AppComponent {
 
   myEvent(evt: any){
     console.log(evt);
+    console.log(this.userDetails)
   }
 
   getValue(data:any) {
