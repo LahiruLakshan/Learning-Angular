@@ -43,6 +43,8 @@
 </div>
 <h2 *ngFor="let item of users">Name is {{item}}</h2>
 <h1 *ngFor="let item of userDetails">{{userDetails.indexOf(item) + 1}}. He name is {{item.name}}. He was born in {{item.year}}</h1>
+
+
 <h1>Nested List</h1>
 <ul *ngFor="let user of usersList">
   <li>{{user.name}}</li>

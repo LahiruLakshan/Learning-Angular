@@ -10,6 +10,8 @@ export class FormComponent implements OnInit {
   title="Form";
   constructor() { }
 
+  array = ["A","B","C","D", "E", "F", "G"]
+
   ngOnInit(): void {
   }
 
