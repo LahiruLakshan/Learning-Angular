@@ -10,6 +10,7 @@ import {FormsModule} from "@angular/forms";
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { UsdSlrPipe } from './pipes/usd-slr.pipe';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     TodoListComponent,
     ChildComponent,
     UserDetailsComponent,
+    UsdSlrPipe,
   ],
   imports: [
     BrowserModule,
