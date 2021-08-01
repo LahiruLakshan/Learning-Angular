@@ -27,7 +27,10 @@ export class TestingComponent implements OnInit {
     {name:"Lahiru",phone:1112434311,email:"lahiru@gmail.com", account:['facebook', 'gmail', 'linkedIn']},
     {name:"Peter",phone:132322334,email:"peter@gmail.com", account:['linkedIn', 'yahoo', 'youtube']},
     {name:"Kasun",phone:1112344211,email:"kasun@gmail.com", account:['twitter', 'instagram', 'youtube']}
-  ]
+  ];
+  data:any;
+
+
   getName(){
     return this.lastName;
   }
