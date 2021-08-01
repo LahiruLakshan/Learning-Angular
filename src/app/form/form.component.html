@@ -1,20 +1,26 @@
-<!--<h1>{{title}}</h1>-->
+<h1>{{title}}</h1>
 
-<!--<form #basicForm="ngForm" (submit)="getData(basicForm.value)">-->
-<!--  <input type="text" ngModel name="user" placeholder="Enter user name"/>-->
-<!--  <br>-->
-<!--  <br>-->
-<!--  <input type="text" ngModel name="email" placeholder="Enter user email"/>-->
-<!--  <br>-->
-<!--  <br>-->
-<!--  <input type="text" ngModel name="password" placeholder="Enter user password"/>-->
-<!--  <br>-->
-<!--  <br>-->
-<!--  <button>Register</button>-->
-<!--</form>-->
+<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+  <input #name="ngModel" name="user" ngModel pattern="[a-zA-Z]+$" placeholder="Enter user name" required type="text"/>
+  <br/>
+  <span *ngIf="name.invalid && name.touched" style="color:#ff0000">Please enter a valid input!</span>
+  <br/><br/>
+  <input #email="ngModel" email name="email" ngModel placeholder="Enter user email" required type="text"/>
+  <br/>
+  <span *ngIf="email.invalid && email.touched" style="color: #ff0000">Please enter a valid input!</span>
+  <br/>
+  <br/>
+  <input #password="ngModel" name="password" ngModel placeholder="Enter user password" required type="password"/>
+  <br/>
+  <span *ngIf="password.invalid && password.touched" style="color: #ff0000">Please enter a valid input!</span>
+  <br/>
+  <br/>
+  <button [disabled]="basicForm.invalid">Register</button>
+</form>
+<!--<button (click)="getData(basicForm.value)">Register</button>-->
 
-<div *ngFor="let value of array" style="background-color: #970000; display: inline-block; padding: 20px">
-  <div style="background-color: #0033ff; width: 50px; height: 50px;">
-    <h1>{{value}}</h1>
-  </div>
-</div>
+<!--<div *ngFor="let value of array" style="background-color: #970000; display: inline-block; padding: 20px">-->
+<!--  <div style="background-color: #0033ff; width: 50px; height: 50px;">-->
+<!--    <h1>{{value}}</h1>-->
+<!--  </div>-->
+<!--</div>-->
