@@ -28,6 +28,7 @@ export class TestingComponent implements OnInit {
     {name:"Peter",phone:132322334,email:"peter@gmail.com", account:['linkedIn', 'yahoo', 'youtube']},
     {name:"Kasun",phone:1112344211,email:"kasun@gmail.com", account:['twitter', 'instagram', 'youtube']}
   ];
+  array = ["Slide 01","Slide 02","Slide 03","Slide 04", "Slide 05", "Slide 06", "Slide 07"]
   data:any;
 
 

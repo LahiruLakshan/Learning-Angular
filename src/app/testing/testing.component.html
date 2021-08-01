@@ -57,3 +57,10 @@
 </ul>
 <h2>{{data}}</h2>
 <input type="text" [(ngModel)]="data">
+<br>
+<br>
+<div *ngFor="let value of array" style="background-color: #970000; display: inline-block; padding: 20px">
+  <div style="background-color: #0033ff; width: 50px; height: 50px;">
+    <h3>{{value}}</h3>
+  </div>
+</div>
