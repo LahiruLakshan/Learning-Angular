@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  item: number=10;
 
+
+  random() {
+    this.item = Math.floor(Math.random()*20);
+  }
 }

@@ -8,6 +8,7 @@ import { TestingComponent } from './testing/testing.component';
 import { FormComponent } from './form/form.component';
 import {FormsModule} from "@angular/forms";
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     TestingComponent,
     FormComponent,
     TodoListComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
