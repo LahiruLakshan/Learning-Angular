@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   item: number=10;
-  userDetails: any[]=[
+  userDetails:{name: string, email: string}[]=[
     {name:"Lahiru", email:"lahiru@gmail.com"},
     {name:"Lakshan", email: "lakshan@gmail.com"},
     {name:"Tissera", email: "tissera@gmail.com"},

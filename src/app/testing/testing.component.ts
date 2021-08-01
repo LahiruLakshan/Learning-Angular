@@ -12,18 +12,18 @@ export class TestingComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  title = 'Learning Angular';
-  name = "lahiru";
-  lastName = "lakshan";
+  title: string = 'Learning Angular';
+  name: string = "lahiru";
+  lastName: string = "lakshan";
   count:number=0;
-  value = "";
+  value: string = "";
   color : string = "blue";
   users: string[]=["Lahiru", "Lakshan", "Tissera"];
-  userDetails:any = [
+  userDetails:{name: string, year: number, school: string}[] = [
     {name:"Lahiru",year:1999, school:"Sri Dharmaloka College"},
     {name:"Kalana",year:2000, school:"DS Collage"}
   ];
-  usersList=[
+  usersList:{name: string, phone: number, email: string, account: string[]}[]=[
     {name:"Lahiru",phone:1112434311,email:"lahiru@gmail.com", account:['facebook', 'gmail', 'linkedIn']},
     {name:"Peter",phone:132322334,email:"peter@gmail.com", account:['linkedIn', 'yahoo', 'youtube']},
     {name:"Kasun",phone:1112344211,email:"kasun@gmail.com", account:['twitter', 'instagram', 'youtube']}
