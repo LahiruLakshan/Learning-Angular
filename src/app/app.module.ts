@@ -12,6 +12,7 @@ import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { UsdSlrPipe } from './pipes/usd-slr.pipe';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { RedElDirective } from './red-el.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     UserDetailsComponent,
     UsdSlrPipe,
     ReactiveFormComponent,
+    RedElDirective,
   ],
   imports: [
     BrowserModule,
