@@ -1,5 +1,9 @@
 <!--<app-testing></app-testing>-->
 <!--<app-form></app-form>-->
 <!--<app-todo-list></app-todo-list>-->
-<app-child [item]="item"></app-child>
-<button (click)="random()">Random</button>
+<!--<app-child [item]="item"></app-child>-->
+<!--<button (click)="random()">Random</button>-->
+<h1>user-details </h1>
+<ul *ngFor="let item of userDetails">
+  <app-user-details [detail]="item"></app-user-details>
+</ul>
