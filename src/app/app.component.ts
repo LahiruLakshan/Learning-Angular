@@ -13,8 +13,15 @@ export class AppComponent {
     {name:"Tissera", email: "tissera@gmail.com"},
     {name:"Peter", email: "peter@gmail.com"},
   ]
-
+  data="Eg: Something..."
   random() {
     this.item = Math.floor(Math.random()*20);
+  }
+
+  updateDataEvent(value:string){
+    if (value === ""){
+      value = "Eg: Something..."
+    }
+    this.data = value;
   }
 }

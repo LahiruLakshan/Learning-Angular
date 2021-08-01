@@ -3,7 +3,9 @@
 <!--<app-todo-list></app-todo-list>-->
 <!--<app-child [item]="item"></app-child>-->
 <!--<button (click)="random()">Random</button>-->
-<h1>user-details </h1>
-<ul *ngFor="let item of userDetails">
-  <app-user-details [detail]="item"></app-user-details>
-</ul>
+<!--<h1>user-details </h1>-->
+<!--<ul *ngFor="let item of userDetails">-->
+<!--  <app-user-details [detail]="item"></app-user-details>-->
+<!--</ul>-->
+<h2>{{data}}</h2>
+<app-child (updateData)="updateDataEvent($event)"></app-child>
